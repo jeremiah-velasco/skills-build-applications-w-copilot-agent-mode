@@ -1,4 +1,14 @@
 {
+  "name": "octofit-tracker-backend",
+  "version": "1.0.0",
+  "description": "Octofit Tracker API",
+  "main": "src/app.ts",
+  "scripts": {
+    "dev": "nodemon --exec tsx src/app.ts",
+    "start": "node dist/app.js",
+    "build": "tsc",
+    "seed": "tsx src/scripts/seed.ts"
+  },
   "dependencies": {
     "express": "^5.2.1",
     "mongoose": "^9.9.2"
